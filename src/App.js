@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Header } from './components';
+import { Navbar, Header } from './components';
 
 import './App.css'
 
@@ -9,7 +9,8 @@ const App = () => {
 
   return (
     <div>
-        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <Navbar />
+        <Header />
     </div>
   )
 }

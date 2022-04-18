@@ -1,145 +1,84 @@
 .app__header {
-    background-image: url("https://cdn.shopify.com/s/files/1/0234/7341/articles/plastics_drowning_ocean.jpg?v=1522776319");
-    background-size: cover;
-    height: 600px;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 750px;
     font-family: var(--font-base);
+    background-color: #fbfbfb;
 }
 
-.app__header-hackathon {
-    color: white;
+.app__header-desc {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    padding-left: 15%;
     justify-content: center;
-    margin-left: 20%;
 }
 
-.hackathon__title {
-    width: 60%;
-    font-size: 30px;
-}
-
-.hackathon__title h1 {
-    font-weight: 800;
-}
-
-.hackathon__subtitle {
-    font-size: 22px;
-    margin: 1rem 0;
-}
-
-.hackathon__subtitle h3 {
-    font-weight: 500;
-}
-
-.hackathon__desc {
+.header__desc {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
-.hackathon__button {
+.header__desc p {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin: 0.7rem 0;
+}
+
+.header__desc h1 {
+    width: 60%;
+    font-size: 63px;
+    font-weight: 800;
+    margin: 0.7rem 0;
+}
+
+.header__desc h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0.7rem 0;
+}
+
+.header__desc h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0.7rem 0;
+}
+
+.header__button {
     display: flex;
+    margin-top: 15px;
 }
 
-.hackathon__button button {
+.header__button button {
     width: 170px;
-    height: 35px;
-    margin-top: 20px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 17px;
-    cursor: pointer;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
 }
 
-.button__register {
-    background-color: rgb(247, 128, 128);
+.header__button-hackathon {
+    background-color: #73decc;
     border: none;
-    color: white;
-    margin-right: 20px;
-    transition: all 0.5s ease;
+    margin-right: 17px;
 }
 
-.button__register:hover {
-    background-color: rgb(240, 85, 85);
-}
-
-.button__about {
+.header__button-join {
+    border: 2px solid #e6c06a;
     background-color: transparent;
-    border: 3px solid rgb(247, 128, 128);
-    color: rgb(247, 128, 128);
-    transition: all 0.5s ease;
+    color: #e6c06a;
 }
 
-.button__about:hover {
-    background-color: rgb(247, 128, 128);
-    color: white;
+.app__header-img {
+    overflow: hidden;
+    display: flex;
+    width: 50%;
 }
 
-
-@media screen and (min-width: 2000px) {
-    .hackathon__title {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 1225px) {
-    .hackathon__title {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 919px) {
-    .hackathon__title {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .hackathon__title {
-        width: 80%;
-    }
-
-    .app__header-hackathon {
-        margin: 0;
-    }
-    
-    .hackathon__title {
-        margin: auto;
-        font-size: 20px;
-        
-    }
-
-    .hackathon__subtitle {
-        margin-left: 10%;
-        font-size: 17px;
-    }
-
-    .hackathon__desc {
-        margin-left: 10%;
-    }
-
-    .hackathon__button {
-        justify-content: center;
-        margin: 0 2rem;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .hackathon__title {
-        font-size: 15px;
-        word-wrap: break-word;
-    }
-
-    .hackathon__subtitle {
-        font-size: 14px;
-    }
-
-    .hackathon__desc {
-        font-size: 10px;
-    }
-
-    .hackathon__button {
-        flex-direction: column;
-    }
+.app__header-img img{
+    width: 100%;
+    object-fit: cover;
 }
